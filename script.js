@@ -23,7 +23,7 @@ function formatTime(seconds) {
 
 
 async function getSongs(currFolder) {
-    let a = await fetch(`/songs/${currFolder}`)
+    let a = await fetch(`https://spotify-clone-henna-three.vercel.app/songs/${currFolder}`)
     let response = await a.text()
     let div = document.createElement("div")
     div.innerHTML = response
@@ -36,7 +36,7 @@ async function getSongs(currFolder) {
             songs.push(element.href)
         }
     }
-    // console.log(songs);
+    console.log(response);
 
     return songs
 }
