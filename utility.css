@@ -1,0 +1,25 @@
+.invert{
+    filter: invert();
+}
+
+/* Scrollbar for Webkit-based browsers */
+::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #1a1a1a; /* Dark gray for contrast */
+    border-radius: 6px; /* Rounded edges */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #000000; /* Light cyan */
+    border-radius: 6px; /* Rounded edges */
+    opacity: 0.8; /* Slight transparency */
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #000000; /* Brighter cyan for hover */
+    opacity: 1;
+  }
+  
